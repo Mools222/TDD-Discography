@@ -17,5 +17,6 @@ public class RecordTest {
         assertEquals(Duration.ofSeconds(0), record.getPlaytime());
         assertEquals(0, record.getTrackCount());
         assertEquals("single", record.getType());
+        assertEquals("Under Production [2074-10-06, PT0S]", record.toString());
     }
 }
