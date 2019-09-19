@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Record {
-    private String title;
+    private String title, type;
     private LocalDate releaseDate;
     private ArrayList<Track> trackList;
 
-    public Record(String title, LocalDate releaseDate, Track... tracks) {
+    public Record(String title, LocalDate releaseDate, String type, Track... tracks) {
         this.title = title;
         this.releaseDate = releaseDate;
+        this.type = type;
         trackList = new ArrayList<>(Arrays.asList(tracks));
     }
 
@@ -37,7 +38,7 @@ public class Record {
     }
 
     public String getType() {
-        return "single";
+        return type;
     }
 
     @Override
