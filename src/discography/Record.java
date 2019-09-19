@@ -51,6 +51,6 @@ public class Record {
     }
 
     public ArrayList<Track> getTrackList() {
-        return new ArrayList<>(Arrays.asList(new Track("And You and I", 10, 8), new Track("America", 4, 12, true)));
+        return trackList;
     }
 }
