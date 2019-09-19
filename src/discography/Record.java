@@ -5,11 +5,14 @@ import java.time.LocalDate;
 import java.time.Month;
 
 public class Record {
+    private String title;
+
     public Record(String title) {
+        this.title = title;
     }
 
     public String getTitle() {
-        return "Under Production";
+        return title;
     }
 
     public LocalDate getReleaseDate() {
