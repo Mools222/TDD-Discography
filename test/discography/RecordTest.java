@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -25,6 +27,7 @@ public class RecordTest {
         Record record = new Record("Close to the Edge", LocalDate.of(1972, Month.SEPTEMBER, 13));
         assertEquals("Close to the Edge", record.getTitle());
         assertEquals(LocalDate.of(1972, Month.SEPTEMBER, 13), record.getReleaseDate());
-        
+        assertEquals(new ArrayList<Track>(Arrays.asList(new Track("And You and I", 10, 8), new Track("America", 4, 12, true)), record.getTrackList());
+
     }
 }
