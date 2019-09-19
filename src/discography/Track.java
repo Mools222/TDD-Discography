@@ -20,4 +20,9 @@ public class Track {
     public Duration getPlaytime() {
         return Duration.ofMinutes(10).plusSeconds(8);
     }
+
+    @Override
+    public String toString() {
+        return "And You and I [PT10M8S]";
+    }
 }
