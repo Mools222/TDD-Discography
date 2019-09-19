@@ -15,4 +15,10 @@ class TrackTest {
         assertEquals(Duration.ofMinutes(10).plusSeconds(8), track.getPlaytime());
         assertEquals("And You and I [PT10M8S]", track.toString());
     }
+
+    @Test
+    public void testCreateBonusTrack() {
+        Track track = new Track("America", 4, 12);
+        assertEquals("America", track.getTitle());
+    }
 }
