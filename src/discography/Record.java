@@ -1,5 +1,6 @@
 package discography;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -13,5 +14,9 @@ public class Record {
 
     public LocalDate getReleaseDate() {
         return LocalDate.of(2074, Month.OCTOBER, 6);
+    }
+
+    public Duration getPlaytime() {
+        return Duration.ofSeconds(0);
     }
 }
