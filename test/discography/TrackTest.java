@@ -18,7 +18,7 @@ class TrackTest {
 
     @Test
     public void testCreateBonusTrack() {
-        Track track = new Track("America", 4, 12);
+        Track track = new Track("America", 4, 12, true);
         assertEquals("America", track.getTitle());
         assertTrue(track.isBonusTrack());
     }

@@ -5,9 +5,15 @@ import java.time.Duration;
 public class Track {
     private String title;
     private final int minutes = 10, seconds = 8;
+    private boolean isBonusTrack;
 
     public Track(String title, int minutes, int seconds) {
         this.title = title;
+    }
+
+    public Track(String title, int minutes, int seconds, boolean isBonusTrack) {
+        this.title = title;
+        this.isBonusTrack = isBonusTrack;
     }
 
     public String getTitle() {
@@ -15,7 +21,7 @@ public class Track {
     }
 
     public boolean isBonusTrack() {
-        return false;
+        return isBonusTrack;
     }
 
     public Duration getPlaytime() {
