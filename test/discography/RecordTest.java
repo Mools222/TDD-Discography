@@ -24,5 +24,6 @@ public class RecordTest {
     public void testCreateAlbum() {
         Record record = new Record("Close to the Edge");
         assertEquals("Close to the Edge", record.getTitle());
+        assertEquals(LocalDate.of(1972, Month.SEPTEMBER, 13), record.getReleaseDate());
     }
 }
