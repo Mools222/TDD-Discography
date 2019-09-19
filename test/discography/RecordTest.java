@@ -19,4 +19,8 @@ public class RecordTest {
         assertEquals("single", record.getType());
         assertEquals("Under Production [2074-10-06, PT0S]", record.toString());
     }
+
+    @Test
+    public void testCreateAlbum() {
+    }
 }
