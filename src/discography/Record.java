@@ -27,4 +27,9 @@ public class Record {
     public String getType() {
         return "single";
     }
+
+    @Override
+    public String toString() {
+        return "Under Production [2074-10-06, PT0S]";
+    }
 }
