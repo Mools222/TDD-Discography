@@ -22,7 +22,11 @@ public class Discography {
 
     @Override
     public String toString() {
-        return "Future Artist\n0 records";
+        String string = artistName + "\n" + getRecordCount() + " records";
+        for (Record record : recordList) {
+            string += "\n" + record;
+        }
+        return string;
     }
 
     public ArrayList<Record> getRecordList() {
