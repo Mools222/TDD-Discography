@@ -53,4 +53,9 @@ public class Record {
     public ArrayList<Track> getTrackList() {
         return trackList;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return toString().equals(obj.toString()) && type.equals(((Record) obj).type);
+    }
 }

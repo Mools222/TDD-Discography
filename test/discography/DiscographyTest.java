@@ -20,9 +20,8 @@ class DiscographyTest {
 
     @Test
     public void testCreateDiscographyContainingRecord() {
-        Discography discography = new Discography("Yes");
+        Discography discography = new Discography("Yes", new Record("Close to the Edge", LocalDate.of(1972, Month.SEPTEMBER, 13), "album", new Track("And You and I", 10, 8), new Track("America", 4, 12, true)));
         assertEquals("Yes", discography.getArtistName());
-        assertEquals(new ArrayList<>(Arrays.asList(new Record("Close to the Edge", LocalDate.of(1972, Month.SEPTEMBER, 13), "album", new Track("And You and I", 10, 8), new Track("America", 4, 12, true))), discography.getRecordList());
-
+        assertEquals(new ArrayList<>(Arrays.asList(new Record("Close to the Edge", LocalDate.of(1972, Month.SEPTEMBER, 13), "album", new Track("And You and I", 10, 8), new Track("America", 4, 12, true)))), discography.getRecordList());
     }
 }
