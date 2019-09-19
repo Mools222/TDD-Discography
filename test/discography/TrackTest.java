@@ -22,5 +22,6 @@ class TrackTest {
         assertEquals("America", track.getTitle());
         assertTrue(track.isBonusTrack());
         assertEquals(Duration.ofMinutes(4).plusSeconds(12), track.getPlaytime());
+        assertEquals("America [PT4M12S]", track.toString());
     }
 }
