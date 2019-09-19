@@ -15,5 +15,7 @@ class DiscographyTest {
 
     @Test
     public void testCreateDiscographyContainingRecord() {
+        Discography discography = new Discography("Yes");
+        assertEquals("Yes", discography.getArtistName());
     }
 }
