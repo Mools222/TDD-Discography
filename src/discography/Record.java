@@ -2,17 +2,18 @@ package discography;
 
 import java.time.Duration;
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Record {
     private String title;
     private LocalDate releaseDate;
+    private ArrayList<Track> trackList;
 
-    public Record(String title, LocalDate releaseDate) {
+    public Record(String title, LocalDate releaseDate, Track... tracks) {
         this.title = title;
         this.releaseDate = releaseDate;
+        trackList = new ArrayList<>(Arrays.asList(tracks));
     }
 
     public String getTitle() {
@@ -24,7 +25,11 @@ public class Record {
     }
 
     public Duration getPlaytime() {
-        return Duration.ofSeconds(0);
+        Duration playtime = Duration.ZERO;
+        for (Track track : trackList) {
+            playtime = playtime.plus(track.getPlaytime());
+        }
+        return playtime;
     }
 
     public int getTrackCount() {
