@@ -3,14 +3,14 @@ package discography;
 import java.time.Duration;
 
 public class Track {
-    public Track(String title) {
-    }
+    private final String title = "And You and I";
+    private final int minutes = 10, seconds = 8;
 
     public Track(String title, int minutes, int seconds) {
     }
 
     public String getTitle() {
-        return "And You and I";
+        return title;
     }
 
     public boolean isBonusTrack() {
@@ -18,11 +18,11 @@ public class Track {
     }
 
     public Duration getPlaytime() {
-        return Duration.ofMinutes(10).plusSeconds(8);
+        return Duration.ofMinutes(minutes).plusSeconds(seconds);
     }
 
     @Override
     public String toString() {
-        return "And You and I [PT10M8S]";
+        return title + " [PT10M8S]";
     }
 }
