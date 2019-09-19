@@ -6,9 +6,11 @@ import java.time.Month;
 
 public class Record {
     private String title;
+    private LocalDate releaseDate;
 
-    public Record(String title) {
+    public Record(String title, LocalDate releaseDate) {
         this.title = title;
+        this.releaseDate = releaseDate;
     }
 
     public String getTitle() {
@@ -16,7 +18,7 @@ public class Record {
     }
 
     public LocalDate getReleaseDate() {
-        return LocalDate.of(2074, Month.OCTOBER, 6);
+        return releaseDate;
     }
 
     public Duration getPlaytime() {
