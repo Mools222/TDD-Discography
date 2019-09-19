@@ -3,10 +3,11 @@ package discography;
 import java.time.Duration;
 
 public class Track {
-    private final String title = "And You and I";
+    private String title;
     private final int minutes = 10, seconds = 8;
 
     public Track(String title, int minutes, int seconds) {
+        this.title = title;
     }
 
     public String getTitle() {
