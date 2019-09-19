@@ -12,4 +12,8 @@ class DiscographyTest {
         assertEquals(0, discography.getRecordCount());
         assertEquals("Future Artist\n0 records", discography.toString());
     }
+
+    @Test
+    public void testCreateDiscographyContainingRecord() {
+    }
 }
