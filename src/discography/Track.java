@@ -7,4 +7,8 @@ public class Track {
     public String getTitle() {
         return "And You and I";
     }
+
+    public boolean isBonusTrack() {
+        return false;
+    }
 }
