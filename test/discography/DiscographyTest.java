@@ -9,5 +9,6 @@ class DiscographyTest {
     public void testCreateDiscography() {
         Discography discography = new Discography("Future Artist");
         assertEquals("Future Artist", discography.getArtistName());
+        assertEquals(0, discography.getRecordCount());
     }
 }
