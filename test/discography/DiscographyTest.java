@@ -24,5 +24,6 @@ class DiscographyTest {
         assertEquals("Yes", discography.getArtistName());
         assertEquals(new ArrayList<>(Arrays.asList(new Record("Close to the Edge", LocalDate.of(1972, Month.SEPTEMBER, 13), "album", new Track("And You and I", 10, 8), new Track("America", 4, 12, true)))), discography.getRecordList());
         assertEquals(1, discography.getRecordCount());
+        assertEquals("Yes\n1 records\nClose to the Edge [1972-09-13, PT14M20S]\n[1] And You and I [PT10M8S]\n[2] America [PT4M12S]", discography.toString());
     }
 }
