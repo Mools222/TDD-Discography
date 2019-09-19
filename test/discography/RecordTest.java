@@ -2,6 +2,7 @@ package discography;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -13,5 +14,6 @@ public class RecordTest {
         Record record = new Record("Under Production");
         assertEquals("Under Production", record.getTitle());
         assertEquals(LocalDate.of(2074, Month.OCTOBER, 6), record.getReleaseDate());
+        assertEquals(Duration.ofSeconds(0), record.getPlaytime());
     }
 }
