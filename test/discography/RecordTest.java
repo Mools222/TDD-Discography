@@ -30,5 +30,6 @@ public class RecordTest {
         assertEquals(new ArrayList<>(Arrays.asList(new Track("And You and I", 10, 8), new Track("America", 4, 12, true))), record.getTrackList());
         assertEquals(Duration.ofMinutes(14).plusSeconds(20), record.getPlaytime());
         assertEquals(2, record.getTrackCount());
+        assertEquals("album", record.getType());
     }
 }
