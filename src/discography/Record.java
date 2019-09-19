@@ -3,6 +3,8 @@ package discography;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Record {
     private String title;
@@ -36,5 +38,9 @@ public class Record {
     @Override
     public String toString() {
         return "Under Production [2074-10-06, PT0S]";
+    }
+
+    public ArrayList<Track> getTrackList() {
+        return new ArrayList<>(Arrays.asList(new Track("And You and I", 10, 8), new Track("America", 4, 12, true)));
     }
 }

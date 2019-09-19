@@ -33,4 +33,9 @@ public class Track {
     public String toString() {
         return title + " [" + playtime + "]";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return toString().equals(obj.toString()) && bonusTrack == ((Track) obj).bonusTrack;
+    }
 }
