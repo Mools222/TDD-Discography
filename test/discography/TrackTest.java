@@ -8,7 +8,13 @@ class TrackTest {
     @Test
     public void testCreateTrack() {
         Track track = new Track("And You and I");
-        String title = track.getTitle();
-        assertEquals("And You and I", title);
+        assertEquals("And You and I", track.getTitle());
     }
+
+    @Test
+    public void testIsBonusTrack() {
+        Track track = new Track("And You and I");
+        assertFalse(track.isBonusTrack());
+    }
+
 }
