@@ -1,11 +1,14 @@
 package discography;
 
 public class Discography {
+    private String artistName;
+
     public Discography(String artistName) {
+        this.artistName = artistName;
     }
 
     public String getArtistName() {
-        return "Future Artist";
+        return artistName;
     }
 
     public int getRecordCount() {
