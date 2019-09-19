@@ -13,6 +13,6 @@ class TrackTest {
         assertEquals("And You and I", track.getTitle());
         assertFalse(track.isBonusTrack());
         assertEquals(Duration.ofMinutes(10).plusSeconds(8), track.getPlaytime());
+        assertEquals("And You and I [PT10M8S]", track.toString());
     }
-
 }
