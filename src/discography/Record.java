@@ -19,4 +19,8 @@ public class Record {
     public Duration getPlaytime() {
         return Duration.ofSeconds(0);
     }
+
+    public int getTrackCount() {
+        return 0;
+    }
 }
