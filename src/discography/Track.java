@@ -23,6 +23,6 @@ public class Track {
 
     @Override
     public String toString() {
-        return title + " [PT10M8S]";
+        return title + " [PT" + minutes + "M" + seconds + "S]";
     }
 }
