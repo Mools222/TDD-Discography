@@ -33,7 +33,7 @@ public class Record {
     }
 
     public int getTrackCount() {
-        return 0;
+        return trackList.size();
     }
 
     public String getType() {
