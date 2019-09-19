@@ -7,4 +7,8 @@ public class Discography {
     public String getArtistName() {
         return "Future Artist";
     }
+
+    public int getRecordCount() {
+        return 0;
+    }
 }
