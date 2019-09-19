@@ -15,5 +15,6 @@ public class RecordTest {
         assertEquals("Under Production", record.getTitle());
         assertEquals(LocalDate.of(2074, Month.OCTOBER, 6), record.getReleaseDate());
         assertEquals(Duration.ofSeconds(0), record.getPlaytime());
+        assertEquals(0, record.getTrackCount());
     }
 }
