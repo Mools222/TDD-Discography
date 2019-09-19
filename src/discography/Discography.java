@@ -17,7 +17,7 @@ public class Discography {
     }
 
     public int getRecordCount() {
-        return 0;
+        return recordList.size();
     }
 
     @Override
