@@ -31,6 +31,6 @@ public class RecordTest {
         assertEquals(Duration.ofMinutes(14).plusSeconds(20), record.getPlaytime());
         assertEquals(2, record.getTrackCount());
         assertEquals("album", record.getType());
-        assertEquals("Close to the Edge [1972-09-13, PT14M20S]\n[1] And You and I [PT10M8S]\n[2]America [PT4M12S]", record.toString());
+        assertEquals("Close to the Edge [1972-09-13, PT14M20S]\n[1] And You and I [PT10M8S]\n[2] America [PT4M12S]", record.toString());
     }
 }

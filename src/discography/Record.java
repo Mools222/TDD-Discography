@@ -43,7 +43,11 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Under Production [2074-10-06, PT0S]";
+        String string = title + " [" + releaseDate + ", " + getPlaytime() + "]";
+        for (int i = 0; i < trackList.size(); i++) {
+            string += "\n[" + (i + 1) + "] " + trackList.get(i);
+        }
+        return string;
     }
 
     public ArrayList<Track> getTrackList() {
